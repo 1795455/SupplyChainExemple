@@ -1,11 +1,12 @@
 pragma solidity ^0.6.0;
 
 contract Ownable {
+    
     address public _owner;
 
     constructor () internal {
-    _   owner = msg.sender;
-    }
+        _owner = msg.sender;
+        }
 
     /**
     * @dev Throws if called by any account other than the owner.
